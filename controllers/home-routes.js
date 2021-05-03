@@ -24,4 +24,9 @@ router.get('/', (req, res) => {
     .catch(err => res.status(500).json(err));
 });
 
+// login page
+router.get('/login', (req, res) => {
+    res.render('login');
+});
+
 module.exports = router;
