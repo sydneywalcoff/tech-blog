@@ -1,0 +1,17 @@
+{{!-- post --}}
+<article class="post">
+    <div class="post-title">
+        <h3>{{post.title}}</h3>
+    </div>
+    <div class="post-body">
+        {{post.body_content}}
+    </div>
+    <div class="meta">
+        {{post.vote_count}} point(s) by {{post.user.username}} on
+    {{post.created_at}}
+    |
+    <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
+    </div>
+</article>
+
+{{!-- comments --}}
