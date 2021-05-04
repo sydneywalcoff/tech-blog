@@ -13,13 +13,18 @@
             <h1>Seddit.</h1>
         </a>
         <nav>
+            {{#if loggedIn}}
             <button id="logout" class="btn-no-style">logout</button>
+            {{else}}
             <a href="/login">login</a>
+            {{/if}}
         </nav>
     </header>
     <main>
         {{{ body }}}
     </main>
 </body>
+{{#if loggedIn}}
 <script src="/javascript/logout.js"></script>
+{{/if}}
 </html>
