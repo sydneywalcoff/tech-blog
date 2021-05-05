@@ -7,8 +7,8 @@
         {{post.body_content}}
     </div>
     <div class="meta">
-        {{post.vote_count}} point(s) by {{post.user.username}} on
-    {{post.created_at}}
+        by {{post.user.username}} on
+    {{format_date post.created_at}}
     </div>
 </article>
 

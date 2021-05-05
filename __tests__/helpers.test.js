@@ -9,7 +9,7 @@ test('format_date() returns a date string', () => {
 test('format_plural() returns the correct pluralization', () => {
     const word = 'word';
 
-    expect(format_plural(word, 2)).toBe('words');
-    expect(format_plural(word, 0)).toBe('words');
-    expect(format_plural(word, 1)).toBe('word');
+    expect(format_plural(word, 2)).toBe('2 words');
+    expect(format_plural(word, 0)).toBe('0 words');
+    expect(format_plural(word, 1)).toBe('1 word');
 });
