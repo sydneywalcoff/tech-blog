@@ -1,6 +1,12 @@
+:root {
+    --gray: #DAE0E6;
+    --white: #fff
+}
+
 * {
     margin: 0;
     padding: 0;
+
 }
 
 html {
@@ -12,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1%;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 nav {
@@ -26,6 +32,26 @@ nav {
 main {
     width: 65%;
     margin: 2% auto;
+}
+
+/* post */
+li {
+    list-style-type: none;
+    display: flex;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--white);
+    margin: 2% 0;
+    padding: 2%;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 0 auto;
 }
 
 /* footer */
