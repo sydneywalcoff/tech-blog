@@ -4,8 +4,8 @@ module.exports = {
     },
     format_plural: (word, amount) => {
         if(amount===1){
-            return `${amount} ${word}`;
+            return `${word}`;
         }
-        return `${amount} ${word}s`;
+        return `${word}s`;
     }
 } 
