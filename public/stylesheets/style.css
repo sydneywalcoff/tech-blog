@@ -1,16 +1,20 @@
 :root {
-    --gray: #DAE0E6;
-    --white: #fff
+    --primary: #35465C;
+    --secondary: #DAE0E6;
 }
 
 * {
     margin: 0;
     padding: 0;
-
 }
 
 html {
-    background-color: #DAE0E6;
+    background-color: var(--primary);
+    font-family: sans-serif
+}
+
+body {
+    background-color: var(--primary) !important;
 }
 
 /* header */
@@ -18,20 +22,38 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1%;
-    background-color: var(--white);
+    background-color: var(--primary);
+}
+
+header a {
+    text-decoration: none;
 }
 
 nav {
     display: flex;
     align-items: center;
-    width: 10%;
+    width: 15%;
     justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+button {
+    width
+}
+
+h1 {
+    color: var(--secondary);
 }
 
 /* main */
 main {
     width: 65%;
     margin: 2% auto;
+    background-color: var;
 }
 
 /* post */
@@ -44,14 +66,31 @@ li {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--secondary);
     margin: 2% 0;
-    padding: 2%;
+}
+
+p.card-text {
+    padding: 2% 0 0 2%;    
 }
 
 .title {
     font-size: 2rem;
     margin: 0 auto;
+}
+
+a.comments {
+    padding-left: 5px;
+}
+
+.meta {
+    display: flex;
+    margin: 2% auto 0;
+}
+
+.login-container.wrapper {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* footer */
