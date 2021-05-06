@@ -47,6 +47,7 @@ button {
 
 h1 {
     color: var(--secondary);
+    padding-left: 50%;
 }
 
 /* main */
@@ -91,6 +92,11 @@ a.comments {
 .login-container.wrapper {
     display: flex;
     justify-content: space-around;
+}
+
+/* login page */
+button#login {
+    
 }
 
 /* footer */
