@@ -93,8 +93,11 @@ ul.comments.list-group{
     margin: 5% auto 0;
 }
 
-/* dashboard */
-/* edit button */
+/* dashboard posts */
+section.dashboard-posts {
+    margin-top: 3%;
+}
+    /* edit button */
 .edit-button {
     height: 100%;
 }
