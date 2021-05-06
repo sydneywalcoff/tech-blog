@@ -50,7 +50,6 @@ h1 {
 main {
     width: 65%;
     margin: 2% auto;
-    background-color: var;
 }
 
 /* post */
@@ -64,7 +63,6 @@ li {
     flex-direction: column;
     width: 100%;
     background-color: var(--secondary);
-    margin: 2% 0;
 }
 
 p.card-text {
@@ -95,4 +93,13 @@ ul.comments.list-group{
     margin: 5% auto 0;
 }
 
-/* footer */
+/* dashboard */
+/* edit button */
+.edit-button {
+    height: 100%;
+}
+
+.dashboard-posts {
+    display: flex;
+    margin: 2% 0;
+}

@@ -18,9 +18,9 @@
     <h2>Your Posts</h2>
     <ol>
         {{#each posts as |post|}}
-        <li>
+        <li class="dashboard-posts">
             {{> post-info post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+            <a href="/dashboard/edit/{{post.id}}"><button type="button" class="btn btn-secondary edit-button">Edit post</button></a>
         </li>
         {{/each}}
     </ol>
