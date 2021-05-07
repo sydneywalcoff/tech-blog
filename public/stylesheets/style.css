@@ -52,7 +52,7 @@ main {
     margin: 2% auto;
 }
 
-.post-list {
+.dashboard-posts {
     display: flex;
     margin: 2% 0;
 }
@@ -109,7 +109,7 @@ textarea#post-body {
 }
 
 /* dashboard posts */
-section.post-list {
+section.dashboard-posts {
     margin-top: 3%;
 }
 
