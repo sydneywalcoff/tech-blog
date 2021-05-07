@@ -16,13 +16,12 @@
 
 {{!-- comments --}}
 {{#if loggedIn}}
-<form class="comment-form">
-    <div>
+<form class="comment-form card">
+    <h2 class="card-header">Add a Comment</h2>
+    <div class="card-body">
         <textarea name="comment-body"></textarea>
-    </div>
-
-    <div>
-        <button type="submit" class="comment-btn">Add comment</button>
+        <br>
+        <button type="submit" class="comment-btn btn btn-secondary">Add comment</button>
     </div>
 </form>
 {{/if}}
