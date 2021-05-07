@@ -17,7 +17,7 @@ Post.init(
             allowNull: false
         },
         body_content: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(5000),
             allowNull: false
         },
         user_id: {
@@ -29,6 +29,7 @@ Post.init(
         }
     },
     {
+        hooks: true,
         sequelize,
         freezeTableName: true,
         underscored: true,

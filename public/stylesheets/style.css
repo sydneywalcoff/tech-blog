@@ -99,7 +99,7 @@ ul.comments.list-group{
 }
 
 /* add new post */
-input {
+.long-input {
     width: 450px;
 }
 
