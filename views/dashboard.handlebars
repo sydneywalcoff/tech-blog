@@ -14,11 +14,11 @@
 </section>
 
 {{#if posts.length}}
-<section class="card dashboard-posts">
+<section class="card post-list">
     <h2 class="card-header">Your Posts</h2>
     <ol class="card-body dashboard-posts-list">
         {{#each posts as |post|}}
-        <li class="dashboard-posts">
+        <li class="post-list">
             {{> post-info post}}
             <a href="/dashboard/edit/{{post.id}}"><button type="button" class="btn btn-secondary edit-button">Edit post</button></a>
         </li>

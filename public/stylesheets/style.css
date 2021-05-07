@@ -52,6 +52,11 @@ main {
     margin: 2% auto;
 }
 
+.post-list {
+    display: flex;
+    margin: 2% 0;
+}
+
 /* post */
 li {
     list-style-type: none;
@@ -104,16 +109,11 @@ textarea#post-body {
 }
 
 /* dashboard posts */
-section.dashboard-posts {
+section.post-list {
     margin-top: 3%;
 }
 
 /* edit button */
 .edit-button {
     height: 100%;
-}
-
-.dashboard-posts {
-    display: flex;
-    margin: 2% 0;
 }
