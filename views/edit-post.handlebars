@@ -1,25 +1,22 @@
-<article>
-    <a href="/dashboard">dashboard</a>
-    <h2>Edit Post</h2>
-    <form class="edit-post-form">
+<article class="card">
+    <h2 class="card-header">Edit Post</h2>
+    <form class="edit-post-form card-body">
         <div>
-            <input name="post-title" type="text" value="{{post.title}}" />
+            <input name="post-title" type="text" value="{{post.title}}" /><br> <br>
             <textarea name="post-body">{{post.body_content}}</textarea>
         </div>
-        <div>
-            <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
-        </div>
-        <button type="submit">Save post</button>
-        <button type="button" class="delete-post-btn">Delete post</button>
+        <br>
+        <button type="submit" class="btn btn-secondary">Save post</button>
+        <button type="button" class="delete-post-btn btn btn-danger" >Delete post</button>
     </form>
 </article>
 
-<form action="" class="comment-form">
-    <div>
-        <textarea name="comment-body"></textarea>
-    </div>
-    <div>
-        <button type="submit">add comment</button>
+<form action="" class="comment-form card">
+    <h3 class="card-header">Add Comment</h3>
+    <div class="card-body">
+        <textarea name="comment-body" id="comment-textarea"></textarea>
+        <br>
+        <button type="submit" class="btn btn-secondary">add comment</button>
     </div>
 </form>
 

@@ -99,11 +99,11 @@ ul.comments.list-group{
 }
 
 /* add new post */
-input#post-title {
+input {
     width: 450px;
 }
 
-textarea#post-body {
+textarea {
     width: 450px;
     height: 300px;
 }
@@ -113,7 +113,17 @@ section.dashboard-posts {
     margin-top: 3%;
 }
 
-/* edit button */
 .edit-button {
     height: 100%;
+}
+
+
+/* edit post */
+textarea#comment-textarea {
+    height: 100px;
+    width: 300px;
+}
+
+.comment-form {
+    margin: 5% 0 5%;
 }
